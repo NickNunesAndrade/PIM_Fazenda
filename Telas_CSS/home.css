@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('../images/fundo_fazenda3.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: rgba(35, 85, 49, 0.66);
+    cursor: pointer;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(35, 85, 49);
+}
+
+.logo {
+    margin-left: 130px;
+    margin-right: 130px;
+    cursor: pointer;
+}
+
+.titulo {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 32px;
+    background-color: whitesmoke;
+    padding: 30px 120px;
+    border-radius: 40px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 160px;
+    margin-left: 350px;
+}
+
+.produto {
+    height: 220px;
+    width: 220px;
+    margin-right: 80px;
+    margin-bottom:50px;
+}
+
+.produto:nth-child(4), .produto:nth-child(5), .produto:nth-child(6) {
+    margin-bottom: -80px;
+}
+
+.produto:hover {
+    transition: 0.2s;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.seta {
+    height: 80px;
+    width: 80px;
+    margin-right: 29px;
+    margin-top: 80px;
+}
+
+.seta:hover {
+    transition: 0.5s;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.descricao {
+    visibility: visible;
+    width: 100vw;
+    height: 100vh;
+}
+
+.descricao .aberto {
+    opacity: 1;
+    visibility: hidden;
+}
+
+.aberto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-top: -29em;
+    margin-left: 35em;
+    margin-bottom: 10px;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    font-family: 'Inter';
+    border-radius: 70px;
+}
+
+.nome {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.tomate {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.opc {
+    height: 40px;
+    width: 40px;
+}
+
+.quant {
+    font-size: 24px;
+    background-color: rgb(220, 220, 220);
+    padding: 10px 20px;
+    border-radius: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.confirma {
+    outline: none;
+    border: none;
+    padding: 10px 70px;
+    font-size: 32px;
+    border-radius: 30px;
+    background-color: rgb(35, 85, 49);
+    color: white;
+}
+
